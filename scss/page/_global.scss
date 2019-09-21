@@ -1,3 +1,19 @@
   img {
       max-width: 100%;
   }
+
+.js-tabContent section{
+  display: none;
+}
+
+.js-tabContent section.ativo {
+  display: block !important;
+  animation: show .5s forwards;
+}
+
+.ativado {
+  color: #000 !important;
+  font-weight: 700 !important;
+}
+
+

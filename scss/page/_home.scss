@@ -134,9 +134,9 @@
 /* Product Visited */
 .productVisited {
     text-align: center;
-    border-bottom: 1px solid #e3e7e8;
+    // border-bottom: 1px solid #e3e7e8;
     padding-bottom: 120px;
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
     &__block-filter {
         display: flex;
         justify-content: space-between;
@@ -147,7 +147,7 @@
                 list-style: none;
 
                 a {
-                    color: #000;
+                    color: #303030;
                     font-weight: 500;
                     padding: 0 10px;
                     margin: 0 10px;
@@ -234,6 +234,18 @@
     }
 }
 /* End Product Visited */
+
+
+/* Call to Action */
+.cta {
+    background-image: url('./assets/img/cta.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 474px;
+    width: 100%;
+}
+/* End Call to Action */
 
 /* Newsletter */
 .newsletter {
