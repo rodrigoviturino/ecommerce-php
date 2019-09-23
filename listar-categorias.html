@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Painel - Dashboard</title>
+</head>
+<body>
+    
+    <aside class="panel-left">
+        <div class="container">
+
+            <h2 class="text-center logo"> 
+                <a href="painel.html">
+                    <img src="assets/img/logo.jpg" alt="">
+                </a>
+            </h2>
+
+            <section class="panel-left__menu">
+              <ul class="panel-left__menu__line-product">
+                  <h3><img src="assets/img/icon/produto.svg" alt=""> Produto</h3>
+                <li>
+                  <a href="adicionar-produto.html">Adicionar Produto</a>
+                </li>
+                <li>
+                  <a href="listar-produtos.html">Listar Produtos</a>
+                </li>
+              </ul>
+              
+              <ul class="panel-left__menu__line-users">
+                <h3><img src="assets/img/user-icon.svg" alt=""> Usuario</h3>
+                <li>
+                  <a href="adicionar-usuario.html">Adicionar Usuario</a>
+                </li>
+                <li>
+                  <a href="listar-usuarios.html">Listar Usuarios</a>
+                </li>
+              </ul>
+
+              <ul class="panel-left__menu__line-category">
+                <h3><img src="assets/img/icon/categoria.svg" alt=""> Categoria</h3>
+                <li>
+                  <a href="adicionar-categoria.html">Adicionar Categoria</a>
+                </li>
+                <li>
+                  <a href="listar-categorias.html" class="ativo">Listar Categorias</a>
+                </li>
+              </ul>
+
+            </section>
+   
+        </div> <!-- End Container-->
+    </aside>
+
+
+    <script src="assets/js/libs/jquery-3.4.1.min.js"></script>
+<script src="assets/js/libs/popper.min.js"></script>
+<!-- <script src="node_modules/bootstrap/js/dist/util.js"></script> -->
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/main.js"></script>
+
+<script>
+let a = document.querySelectorAll('.productVisited__block-filter__listFilter__item');
+
+a.forEach( item => {
+    item.addEventListener('click', function(e){
+        e.preventDefault();      
+    })
+})
+
+</script>
+</body>
+</html>
