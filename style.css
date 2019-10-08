@@ -7875,35 +7875,42 @@ img {
 
 /* End Footer */
 .panel-left {
-  width: 20%;
+  width: 15%;
   height: 100vh;
-  background-color: #626ED4; }
+  background-color: #626ED4;
+  position: absolute; }
   .panel-left .logo {
     margin-bottom: 40px; }
-  .panel-left__menu__line-product li {
-    list-style: none;
-    padding-left: 30px; }
-    .panel-left__menu__line-product li a {
-      color: #F0FFFF;
-      display: block;
-      font-weight: 500;
-      font-family: "Barlow", sans-serif;
-      font-size: 1em; }
-  .panel-left__menu__line-users li {
-    list-style: none;
-    padding-left: 30px; }
-    .panel-left__menu__line-users li a {
-      color: #F0FFFF;
-      display: block;
-      font-weight: 500;
-      font-family: "Barlow", sans-serif;
-      font-size: 1em; }
-  .panel-left__menu__line-category li {
-    list-style: none;
-    padding-left: 30px; }
-    .panel-left__menu__line-category li a {
-      color: #F0FFFF;
-      display: block;
-      font-weight: 500;
-      font-family: "Barlow", sans-serif;
-      font-size: 1em; }
+  .panel-left__menu__line-product {
+    padding-left: 0; }
+    .panel-left__menu__line-product li {
+      list-style: none; }
+      .panel-left__menu__line-product li a {
+        color: #F0FFFF;
+        padding: 10px;
+        display: block;
+        font-weight: 500;
+        font-family: "Barlow", sans-serif;
+        font-size: 1em; }
+  .panel-left__menu__line-users {
+    padding-left: 0; }
+    .panel-left__menu__line-users li {
+      list-style: none; }
+      .panel-left__menu__line-users li a {
+        color: #F0FFFF;
+        padding: 10px;
+        display: block;
+        font-weight: 500;
+        font-family: "Barlow", sans-serif;
+        font-size: 1em; }
+  .panel-left__menu__line-category {
+    padding-left: 0; }
+    .panel-left__menu__line-category li {
+      list-style: none; }
+      .panel-left__menu__line-category li a {
+        color: #F0FFFF;
+        padding: 10px;
+        display: block;
+        font-weight: 500;
+        font-family: "Barlow", sans-serif;
+        font-size: 1em; }
