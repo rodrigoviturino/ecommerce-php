@@ -1,0 +1,124 @@
+.conteudo-painel-addProduto {
+    padding-top: 100px;
+    background-color: #F3F4FA;
+
+    &__block-title {
+        h2 {
+            text-align: center;
+            text-transform: uppercase;
+            text-align: center;
+            @include type-1(30);
+
+            &:after {
+                content: '';
+                display: block;
+                background-color: #FF4081;
+                width: 200px;
+                height: 2px;
+                margin: 0 auto;
+            }
+        }
+
+        .section-box {
+
+            &__item {
+                // padding: 20px 20px 10px;
+                padding: 0px;
+                box-shadow: 0px 1px 15px 1px rgba(69, 65, 78, 0.08);
+                text-align: center;
+                margin:  20px ;
+                background-color: #fff;
+                border: 0px;
+                word-wrap: break-word;
+                border-radius: 0.25rem;
+
+                &__ul {
+                    display: flex;
+                    // justify-content: space-evenly;
+                    list-style: none;
+                    padding: 0px;
+                    margin: 0px;
+
+                    &__icon {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background-color:#512da8;
+                        padding: 40px 0px;
+                        width: 60%;
+                        box-shadow: 0px 1px 15px 1px rgba(69, 65, 78, 0.08);
+                        border-top-left-radius: 0.25rem;
+                        border-bottom-left-radius: 0.25rem;
+
+                        &:nth-child(2){
+                            flex-direction: column;
+                        }
+                    }
+
+                    &__block-title {
+                        width: 100%;
+                        padding: 16px 0;
+                    }
+                }
+            }
+        }
+    }
+
+    /** Tabela de Produtos */
+    &__tabela-wrapper {
+        background-color: #fff;
+        padding: 25px;
+    
+        table {
+
+            thead {
+                tr {
+                    th {
+                        border-bottom: 1px solid #dee2e6;
+                        border-top: none;
+                        color: #878787;
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    td {
+                        border-bottom: 1px solid #dee2e6;
+                        color: #878787;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+    /** end Tabela de Produtos */
+
+    /** Formulario Add Produto */
+    &__form-addProduto {
+        padding: 20px;
+        background-color: #fff;
+
+        .title {
+            color: #512da8;
+            text-transform: uppercase;
+            position: relative;
+            @include type-1(20);
+        }
+    }
+    /** end Formulario Add Produto */
+
+}
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+      local('MaterialIcons-Regular'),
+      url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+      url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+      url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+  }
+
+  

@@ -6,6 +6,7 @@
  */
 @import url("https://fonts.googleapis.com/css?family=Barlow:300,400,500,600,700,800,900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Turret+Road:400,500,700&display=swap");
 :root {
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
@@ -7969,3 +7970,163 @@ img {
         font-weight: 500;
         font-family: "Barlow", sans-serif;
         font-size: 1em; }
+
+/* Page Template */
+.conteudo-painel-addProduto {
+  padding-top: 100px;
+  background-color: #F3F4FA;
+  /** Tabela de Produtos */
+  /** end Tabela de Produtos */
+  /** Formulario Add Produto */
+  /** end Formulario Add Produto */ }
+  .conteudo-painel-addProduto__block-title h2 {
+    text-align: center;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Barlow", sans-serif;
+    font-size: 1.875em; }
+    .conteudo-painel-addProduto__block-title h2:after {
+      content: '';
+      display: block;
+      background-color: #FF4081;
+      width: 200px;
+      height: 2px;
+      margin: 0 auto; }
+  .conteudo-painel-addProduto__block-title .section-box__item {
+    padding: 0px;
+    box-shadow: 0px 1px 15px 1px rgba(69, 65, 78, 0.08);
+    text-align: center;
+    margin: 20px;
+    background-color: #fff;
+    border: 0px;
+    word-wrap: break-word;
+    border-radius: 0.25rem; }
+    .conteudo-painel-addProduto__block-title .section-box__item__ul {
+      display: flex;
+      list-style: none;
+      padding: 0px;
+      margin: 0px; }
+      .conteudo-painel-addProduto__block-title .section-box__item__ul__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #512da8;
+        padding: 40px 0px;
+        width: 60%;
+        box-shadow: 0px 1px 15px 1px rgba(69, 65, 78, 0.08);
+        border-top-left-radius: 0.25rem;
+        border-bottom-left-radius: 0.25rem; }
+        .conteudo-painel-addProduto__block-title .section-box__item__ul__icon:nth-child(2) {
+          flex-direction: column; }
+      .conteudo-painel-addProduto__block-title .section-box__item__ul__block-title {
+        width: 100%;
+        padding: 16px 0; }
+  .conteudo-painel-addProduto__tabela-wrapper {
+    background-color: #fff;
+    padding: 25px; }
+    .conteudo-painel-addProduto__tabela-wrapper table thead tr th {
+      border-bottom: 1px solid #dee2e6;
+      border-top: none;
+      color: #878787; }
+    .conteudo-painel-addProduto__tabela-wrapper table tbody tr td {
+      border-bottom: 1px solid #dee2e6;
+      color: #878787;
+      text-align: center; }
+  .conteudo-painel-addProduto__form-addProduto {
+    padding: 20px;
+    background-color: #fff; }
+    .conteudo-painel-addProduto__form-addProduto .title {
+      color: #512da8;
+      text-transform: uppercase;
+      position: relative;
+      font-family: "Barlow", sans-serif;
+      font-size: 1.25em; }
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot);
+  /* For IE6-8 */
+  src: local("Material Icons"), local("MaterialIcons-Regular"), url(https://example.com/MaterialIcons-Regular.woff2) format("woff2"), url(https://example.com/MaterialIcons-Regular.woff) format("woff"), url(https://example.com/MaterialIcons-Regular.ttf) format("truetype"); }
+.conteudo-painel-listarProduto {
+  padding-top: 100px;
+  background-color: #F3F4FA;
+  /** Formulario de Pesquisa */
+  /** Tabela */ }
+  .conteudo-painel-listarProduto__block-title h2 {
+    text-align: center;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Barlow", sans-serif;
+    font-size: 1.875em; }
+    .conteudo-painel-listarProduto__block-title h2:after {
+      content: '';
+      display: block;
+      background-color: #FF4081;
+      width: 200px;
+      height: 2px;
+      margin: 0 auto; }
+  .conteudo-painel-listarProduto__block-title .section-box__item {
+    padding: 0px;
+    box-shadow: 0px 1px 15px 1px rgba(69, 65, 78, 0.08);
+    text-align: center;
+    margin: 20px;
+    background-color: #fff;
+    border: 0px;
+    word-wrap: break-word;
+    border-radius: 0.25rem; }
+    .conteudo-painel-listarProduto__block-title .section-box__item__ul {
+      display: flex;
+      list-style: none;
+      padding: 0px;
+      margin: 0px; }
+      .conteudo-painel-listarProduto__block-title .section-box__item__ul__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #512da8;
+        padding: 40px 0px;
+        width: 60%;
+        box-shadow: 0px 1px 15px 1px rgba(69, 65, 78, 0.08);
+        border-top-left-radius: 0.25rem;
+        border-bottom-left-radius: 0.25rem; }
+        .conteudo-painel-listarProduto__block-title .section-box__item__ul__icon:nth-child(2) {
+          flex-direction: column; }
+      .conteudo-painel-listarProduto__block-title .section-box__item__ul__block-title {
+        width: 100%;
+        padding: 16px 0; }
+  .conteudo-painel-listarProduto .block-form {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0; }
+    .conteudo-painel-listarProduto .block-form form {
+      display: flex; }
+      .conteudo-painel-listarProduto .block-form form input {
+        border: none;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px; }
+      .conteudo-painel-listarProduto .block-form form button {
+        background-color: #FF4081;
+        padding: 10px;
+        color: #fff;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border: none;
+        font-family: "Barlow", sans-serif;
+        font-size: 1em; }
+  .conteudo-painel-listarProduto table {
+    text-align: center; }
+    .conteudo-painel-listarProduto table tbody .acoes ul {
+      display: flex;
+      list-style: none; }
+      .conteudo-painel-listarProduto table tbody .acoes ul li {
+        padding: 10px;
+        margin: 0 5px;
+        background-color: #512da8;
+        font-family: "Barlow", sans-serif;
+        font-size: 1em; }
+        .conteudo-painel-listarProduto table tbody .acoes ul li a {
+          color: #fff; }
+
+/* end Page Template */

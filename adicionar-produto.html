@@ -5,138 +5,251 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <script defer src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Painel - Dashboard</title>
 </head>
 <body>
-    <!-- Painel Lateral -->
-    <aside class="panel-left">
-        <div class="container">
 
-            <h2 class="text-center logo"> 
-                <a href="painel.html">
-                    <img src="assets/img/logo.jpg" alt="">
-                </a>
-            </h2>
-
-            <section class="panel-left__menu">
-              <ul class="panel-left__menu__line-product">
-                  <h3><img src="assets/img/icon/produto.svg" alt=""> Produto</h3>
-                <li>
-                  <a href="adicionar-produto.html" class="ativo">Adicionar Produto</a>
-                </li>
-                <li>
-                  <a href="listar-produtos.html">Listar Produtos</a>
-                </li>
-              </ul>
-              
-              <ul class="panel-left__menu__line-users">
-                <h3><img src="assets/img/user-icon.svg" alt=""> Usuario</h3>
-                <li>
-                  <a href="adicionar-usuario.html">Adicionar Usuario</a>
-                </li>
-                <li>
-                  <a href="listar-usuarios.html">Listar Usuarios</a>
-                </li>
-              </ul>
-
-              <ul class="panel-left__menu__line-category">
-                <h3><img src="assets/img/icon/categoria.svg" alt=""> Categoria</h3>
-                <li>
-                  <a href="adicionar-categoria.html">Adicionar Categoria</a>
-                </li>
-                <li>
-                  <a href="listar-categorias.html">Listar Categorias</a>
-                </li>
-              </ul>
-
-            </section>
-   
-        </div> <!-- End Container-->
-    </aside>
-<!-- end Painel Lateral -->
-
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-md-7 offset-2">
-      <h4>Listagem de Produtos</h4>
-
-        <table class="table">
-          <thead>
-
-            <tr>
-              <th>ID</th>
-              <th>Nome Produto</th>
-              <th>FOTO</th>
-              <th>Preço</th>
-              <th>Fornecedor</th>
-              <th>Qtd. Estoque</th>
-              <th>Categoria</th>
-              <th>Status</th>            
-              <th>Ações</th>
-            </tr>
-
-          </thead>
+    <!-- Menu -->
+    <header class="header-dashboard">
+        <div class="container-fluid">
+          <div class="row">
       
-          <tbody>
-            <tr>
-              <td>0</td>
-              <td>1</td>
-              <td>2</td>
-            </tr>
-          </tbody>
+            <div class="col-md-12">
+              <nav class="header-dashboard__nav"> 
+                <ul class="header-dashboard__nav__menu">
+                  <li class="header-dashboard__nav__menu__item">
+                    <a href="painel.html">
+                      <!-- <img src="./assets/img/logo.jpg" alt=""> -->
+                      <h1 style="font-family: 'Turret Road', cursive;">CavernaDash</h1>
+                    </a>
+                  </li>
+    
+                  <li class="header-dashboard__nav__menu__item">
+                    <a href="#">Item 01</a>
+                  </li>
+    
+                  <form action="#">
+                      <input type="text">
+                      <button><i class="fas fa-search" style="color: white;"></i>
+                      </button>
+                    </form>
+    
+                  <li class="header-dashboard__nav__menu__item">
+                    <a href="#">Item 02</a>
+                  </li>
+                  <li class="header-dashboard__nav__menu__item">
+                    <a href="#">Item 03</a>
+                  </li>
+    
+                  <li class="header-dashboard__nav__menu__item">
+                    <a href="#" class="user">
+                      <img src="assets/img/avatar.jpg" alt=""> 
+                      <span>Fulano</span>
+                    </a>
+                  </li>
+    
+                </ul>
+              </nav>
+            </div>
+      
+          </div>
+        </div>
+    </header>
+    <!-- end Menu -->
+     
+    <!-- Menu Lateral-->
+      <aside class="panel-left">
+          <div class="container">
+    
+              <!-- <h2 class="text-center logo"> 
+                  <a href="painel.html">
+                      <img src="assets/img/logo.jpg" alt="">
+                  </a>
+              </!--> 
+    
+              <section class="panel-left__menu">
+                <ul class="panel-left__menu__line-product">
+                    <h3><i class="fas fa-box-open" style="color: #fff; margin-right: 5px;"></i> Produto</h3>
+                  <li>
+                    <a href="adicionar-produto.html">Adicionar Produto</a>
+                  </li>
+                  <li>
+                    <a href="listar-produtos.html">Listar Produtos</a>
+                  </li>
+                </ul>
+                
+                <ul class="panel-left__menu__line-users">
+                  <h3><i class="fas fa-user-friends" style="color: #fff; margin-right: 5px;"></i> Usuario</h3>
+                  <li>
+                    <a href="adicionar-usuario.html">Adicionar Usuario</a>
+                  </li>
+                  <li>
+                    <a href="listar-usuarios.html">Listar Usuarios</a>
+                  </li>
+                </ul>
+    
+                <ul class="panel-left__menu__line-category">
+                  <h3><i class="fas fa-sitemap" style="color: #fff; margin-right: 5px;"></i> Categoria</h3>
+                  <li>
+                    <a href="adicionar-categoria.html">Adicionar Categoria</a>
+                  </li>
+                  <li>
+                    <a href="listar-categorias.html">Listar Categorias</a>
+                  </li>
+                </ul>
+    
+              </section>
+      
+          </div> <!-- End Container-->
+      </aside>
+    <!-- end Menu Lateral-->
 
-        </table>
+<main class="conteudo-painel-addProduto">
+
+  
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-10 offset-2 conteudo-painel-addProduto__block-title">
+          <h2 class="title">Adicionar Produto</h2>
+        <div class="row section-box">
+
+          <div class="col section-box__item">
+            <ul class="section-box__item__ul">
+              <li class="section-box__item__ul__icon">
+                <a href="#"><i class="far fa-user fa-2x text-white"></i></i>
+                </a>
+              </li>
+              <li class="section-box__item__ul__block-title">
+                <p class="block-title__title">Total Usuarios</p>
+                <p class="block-title__value">32 Usuarios</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col section-box__item">
+            <ul class="section-box__item__ul">
+              <li class="section-box__item__ul__icon">
+                <a href="#"><i class="fas fa-boxes fa-2x text-white"></i></i></a>
+              </li>
+              <li class="section-box__item__ul__block-title">
+                <p class="block-title__title">Total Produtos</p>
+                <p class="block-title__value">32 Produtos</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col section-box__item">
+            <ul class="section-box__item__ul">
+              <li class="section-box__item__ul__icon">
+                <a href="#"><i class="fas fa-bezier-curve fa-2x text-white"></i></a>
+              </li>
+              <li class="section-box__item__ul__block-title">
+                <p class="block-title__title">Total Categorias</p>
+                <p class="block-title__value">32 Categorias</p>
+              </li>
+            </ul>
+          </div>
+
+
+        </div>
+
+      </div>
 
     </div>
 
-    <div class="col-md-3">
-      <h4 class="">Adicionar Novo Produto</h4>
 
-      <form action="#">
+    <div class="row">
+      <div class="col-md-7 offset-2 conteudo-painel-addProduto__tabela-wrapper">
+        <!-- <h4>Listagem de Produtos</h4> -->
 
-        <div class="custom-file mb-3">
-          <input type="file" class="custom-file-input" id="validatedCustomFile" required>
-          <label class="custom-file-label" for="validatedCustomFile">Selecionar imagem</label>
-        </div>
+          <table class="table">
+            <thead>
 
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Nome Produto">
-        </div>
+              <tr>
+                <th>ID</th>
+                <th>Nome Produto</th>
+                <th>FOTO</th>
+                <th>Preço</th>
+                <th>Fornecedor</th>
+                <th>Qtd. Estoque</th>
+                <th>Categoria</th>
+                <th>Status</th>            
+                <th>Ações</th>
+              </tr>
 
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Preço">
-        </div>
+            </thead>
         
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Fornecedor">
-        </div>
+            <tbody>
+              <tr>
+                <td>0</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+              </tr>
+            </tbody>
 
-        <div class="form-group">
-            <label for="categoria-produto">Categoria Produto</label>
-            <select class="form-control" id="categoria-produto">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-            </select>
+          </table>
+
+      </div>
+
+      <!-- Formulario -->
+      <div class="col-md-3 conteudo-painel-addProduto__form-addProduto">
+        <h4 class="title mb-4">Adicionar Novo Produto</h4>
+
+        <form action="#">
+
+          <div class="custom-file mb-3">
+            <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+            <label class="custom-file-label" for="validatedCustomFile">Selecionar imagem</label>
           </div>
 
           <div class="form-group">
-              <label for="categoria-produto">Status</label>
+            <input type="text" class="form-control" placeholder="Nome Produto">
+          </div>
+
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Preço">
+          </div>
+          
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Fornecedor">
+          </div>
+
+          <div class="form-group">
+              <label for="categoria-produto">Categoria Produto</label>
               <select class="form-control" id="categoria-produto">
-                <option>Ativar</option>
-                <option>Desativar</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
               </select>
             </div>
 
-          <button type="submit" class="btn btn-primary">Enviar</button>
+            <div class="form-group">
+                <label for="categoria-produto">Status</label>
+                <select class="form-control" id="categoria-produto">
+                  <option>Ativar</option>
+                  <option>Desativar</option>
+                </select>
+              </div>
 
-      </form>
-    </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
 
-    </div>
-</div>
+        </form>
+      </div>
+
+      </div>
+  </div>
+
+</main>
 
 
 <script src="assets/js/libs/jquery-3.4.1.min.js"></script>
