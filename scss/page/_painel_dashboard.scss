@@ -172,3 +172,205 @@
 
    
 }
+
+.conteudo-painel-index {
+    padding-top: 100px;
+    background-color: #F3F4FA;
+
+    &__block-title {
+        h2 {
+            text-align: center;
+            text-transform: uppercase;
+            text-align: center;
+            @include type-1(30);
+
+            &:after {
+                content: '';
+                display: block;
+                background-color: #FF4081;
+                width: 200px;
+                height: 2px;
+                margin: 0 auto;
+            }
+        }
+
+        .section-box {
+
+            &__item {
+                // padding: 20px 20px 10px;
+                padding: 0px;
+                box-shadow: 0px 1px 15px 1px rgba(69, 65, 78, 0.08);
+                text-align: center;
+                margin:  20px ;
+                background-color: #fff;
+                border: 0px;
+                word-wrap: break-word;
+                border-radius: 0.25rem;
+
+                &__ul {
+                    display: flex;
+                    // justify-content: space-evenly;
+                    list-style: none;
+                    padding: 0px;
+                    margin: 0px;
+
+                    &__icon {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background-color:#512da8;
+                        padding: 40px 0px;
+                        width: 60%;
+                        box-shadow: 0px 1px 15px 1px rgba(69, 65, 78, 0.08);
+                        border-top-left-radius: 0.25rem;
+                        border-bottom-left-radius: 0.25rem;
+
+                        &:nth-child(2){
+                            flex-direction: column;
+                        }
+                    }
+
+                    &__block-title {
+                        width: 100%;
+                        padding: 16px 0;
+                    }
+                }
+            }
+        }
+    }
+
+
+    &__content {
+
+        &__box01 {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            h4 {                
+                @include type-2(18);
+            }
+
+            img {
+                width: 50%;
+            }
+
+            ul {
+                padding: 0px;
+                li {
+                    list-style: none;
+                    text-align: left;
+
+                    p {
+                        margin: 5px 0;
+                    }
+                }
+            }
+        }
+
+        &__box02 {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            h4 {                
+                @include type-2(18);
+            }
+
+            img {
+                width: 50%;
+            }
+
+            ul {
+                padding: 0px;
+                li {
+                    list-style: none;
+                    text-align: left;
+
+                    p {
+                        margin: 5px 0;
+                    }
+                }
+            }
+        }
+
+        &__box03 {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            h4 {                
+                @include type-2(18);
+            }
+
+            img {
+                width: 50%;
+            }
+
+            ul {
+                padding: 0px;
+                li {
+                    list-style: none;
+                    text-align: left;
+
+                    p {
+                        margin: 5px 0;
+                    }
+                }
+            }
+        }
+
+        &__box04 {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            h4 {                
+                @include type-2(18);
+            }
+
+            img {
+                width: 50%;
+            }
+
+            ul {
+                padding: 0px;
+                li {
+                    list-style: none;
+                    text-align: left;
+
+                    p {
+                        margin: 5px 0;
+                    }
+                }
+            }
+        }
+
+        &__box05 {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            h4 {                
+                @include type-2(18);
+            }
+
+            img {
+                width: 50%;
+            }
+
+            ul {
+                padding: 0px;
+                li {
+                    list-style: none;
+                    text-align: left;
+
+                    p {
+                        margin: 5px 0;
+                    }
+                }
+            }
+        }
+
+    }
+}

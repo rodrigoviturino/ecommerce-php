@@ -6,105 +6,245 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <script defer src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Painel - Dashboard</title>
 </head>
 <body>
 
-  <!-- Menu -->
-<header class="header-dashboard">
-    <div class="container-fluid">
-      <div class="row">
-  
-        <div class="col-md-12">
-          <nav class="header-dashboard__nav"> 
-            <ul class="header-dashboard__nav__menu">
-              <li class="header-dashboard__nav__menu__item">
-                <a href="#">
-                  <img src="./assets/img/logo.jpg" alt="">
-                </a>
-              </li>
-
-              <li class="header-dashboard__nav__menu__item">
-                <a href="#">Item 01</a>
-              </li>
-
-              <form action="#">
-                  <input type="text">
-                  <button><i class="fas fa-search" style="color: white;"></i>
-                  </button>
-                </form>
-
-              <li class="header-dashboard__nav__menu__item">
-                <a href="#">Item 02</a>
-              </li>
-              <li class="header-dashboard__nav__menu__item">
-                <a href="#">Item 03</a>
-              </li>
-
-              <li class="header-dashboard__nav__menu__item">
-                <a href="#" class="user">
-                  <img src="assets/img/avatar.jpg" alt=""> 
-                  <span>Fulano</span>
-                </a>
-              </li>
-
-            </ul>
-          </nav>
+    <!-- Menu -->
+    <header class="header-dashboard">
+        <div class="container-fluid">
+          <div class="row">
+      
+            <div class="col-md-12">
+              <nav class="header-dashboard__nav"> 
+                <ul class="header-dashboard__nav__menu">
+                  <li class="header-dashboard__nav__menu__item">
+                    <a href="painel.html">
+                      <!-- <img src="./assets/img/logo.jpg" alt=""> -->
+                      <h1 style="font-family: 'Turret Road', cursive;">CavernaDash</h1>
+                    </a>
+                  </li>
+    
+                  <li class="header-dashboard__nav__menu__item">
+                    <a href="#">Item 01</a>
+                  </li>
+    
+                  <form action="#">
+                      <input type="text">
+                      <button><i class="fas fa-search" style="color: white;"></i>
+                      </button>
+                    </form>
+    
+                  <li class="header-dashboard__nav__menu__item">
+                    <a href="#">Item 02</a>
+                  </li>
+                  <li class="header-dashboard__nav__menu__item">
+                    <a href="#">Item 03</a>
+                  </li>
+    
+                  <li class="header-dashboard__nav__menu__item">
+                    <a href="#" class="user">
+                      <img src="assets/img/avatar.jpg" alt=""> 
+                      <span>Fulano</span>
+                    </a>
+                  </li>
+    
+                </ul>
+              </nav>
+            </div>
+      
+          </div>
         </div>
-  
+    </header>
+    <!-- end Menu -->
+     
+    <!-- Menu Lateral-->
+      <aside class="panel-left">
+          <div class="container">
+    
+              <!-- <h2 class="text-center logo"> 
+                  <a href="painel.html">
+                      <img src="assets/img/logo.jpg" alt="">
+                  </a>
+              </!--> 
+    
+              <section class="panel-left__menu">
+                <ul class="panel-left__menu__line-product">
+                    <h3><i class="fas fa-box-open" style="color: #fff; margin-right: 5px;"></i> Produto</h3>
+                  <li>
+                    <a href="adicionar-produto.html">Adicionar Produto</a>
+                  </li>
+                  <li>
+                    <a href="listar-produtos.html">Listar Produtos</a>
+                  </li>
+                </ul>
+                
+                <ul class="panel-left__menu__line-users">
+                  <h3><i class="fas fa-user-friends" style="color: #fff; margin-right: 5px;"></i> Usuario</h3>
+                  <li>
+                    <a href="adicionar-usuario.html">Adicionar Usuario</a>
+                  </li>
+                  <li>
+                    <a href="listar-usuarios.html">Listar Usuarios</a>
+                  </li>
+                </ul>
+    
+                <ul class="panel-left__menu__line-category">
+                  <h3><i class="fas fa-sitemap" style="color: #fff; margin-right: 5px;"></i> Categoria</h3>
+                  <li>
+                    <a href="adicionar-categoria.html">Adicionar Categoria</a>
+                  </li>
+                  <li>
+                    <a href="listar-categorias.html">Listar Categorias</a>
+                  </li>
+                </ul>
+    
+              </section>
+      
+          </div> <!-- End Container-->
+      </aside>
+    <!-- end Menu Lateral-->
+
+<main class="conteudo-painel-index">
+
+  <div class="container-fluid">
+
+      <!-- Topo -->
+    <div class="row">
+      <div class="col-md-10 offset-2 conteudo-painel-index__block-title">
+          <h2 class="title">Dashboard</h2>
+        <div class="row section-box">
+
+          <div class="col section-box__item">
+            <ul class="section-box__item__ul">
+              <li class="section-box__item__ul__icon">
+                <a href="#"><i class="far fa-user fa-2x text-white"></i></i>
+                </a>
+              </li>
+              <li class="section-box__item__ul__block-title">
+                <p class="block-title__title">Total Usuarios</p>
+                <p class="block-title__value">32 Usuarios</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col section-box__item">
+            <ul class="section-box__item__ul">
+              <li class="section-box__item__ul__icon">
+                <a href="#"><i class="fas fa-boxes fa-2x text-white"></i></i></a>
+              </li>
+              <li class="section-box__item__ul__block-title">
+                <p class="block-title__title">Total Produtos</p>
+                <p class="block-title__value">32 Produtos</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col section-box__item">
+            <ul class="section-box__item__ul">
+              <li class="section-box__item__ul__icon">
+                <a href="#"><i class="fas fa-bezier-curve fa-2x text-white"></i></a>
+              </li>
+              <li class="section-box__item__ul__block-title">
+                <p class="block-title__title">Total Categorias</p>
+                <p class="block-title__value">32 Categorias</p>
+              </li>
+            </ul>
+          </div>
+
+
+        </div>
+
       </div>
+
     </div>
-</header>
-<!-- end Menu -->
- 
-<!-- Menu Lateral-->
-  <aside class="panel-left">
-      <div class="container">
+    <!-- end Topo -->
 
-          <!-- <h2 class="text-center logo"> 
-              <a href="painel.html">
-                  <img src="assets/img/logo.jpg" alt="">
-              </a>
-          </!--> 
 
-          <section class="panel-left__menu">
-            <ul class="panel-left__menu__line-product">
-                <h3><i class="fas fa-box-open" style="color: #fff; margin-right: 5px;"></i> Produto</h3>
+    <div class="row">
+      <div class="col-md-10 offset-2 conteudo-painel-index__content">
+        <!-- <h4>Listagem de Produtos</h4> -->
+
+        <div class="row">
+
+          <div class="col-md-3 conteudo-painel-index__content__box01">
+            <h4>Ultimas Vendas</h4>
+            <table>
+              <tbody>
+
+                <tr>
+                  <td>Produto: Item 01 -</td>
+                  <td>Preço: R$ 00,00</td>
+                </tr>
+
+                <tr>
+                  <td>Produto: Item 01 -</td>
+                  <td>Preço: R$ 00,00</td>
+                </tr>
+
+                <tr>
+                  <td>Produto: Item 01 -</td>
+                  <td>Preço: R$ 00,00</td>
+                </tr>
+
+                <tr>
+                  <td>Produto: Item 01 -</td>
+                  <td>Preço: R$ 00,00</td>
+                </tr>                
+
+              </tbody>
+
+              <tfoot>
+                <tr>
+                  <td>Total Valor: R$ 00,00</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+
+          <div class="col-md-3 conteudo-painel-index__content__box02">
+            <h4>Ultimo Produto Adicionado</h4>
+            <img src="assets/img/item-02.jpg" alt="">
+            <ul>
               <li>
-                <a href="adicionar-produto.html">Adicionar Produto</a>
-              </li>
-              <li>
-                <a href="listar-produtos.html">Listar Produtos</a>
+                <p>Nome: Produto Teste</p>
+                <p>Valor: 10,18</p>
+                <p>Cliente: Americanas</p>
               </li>
             </ul>
-            
-            <ul class="panel-left__menu__line-users">
-              <h3><i class="fas fa-user-friends" style="color: #fff; margin-right: 5px;"></i> Usuario</h3>
+          </div>
+
+          <div class="col-md-3 conteudo-painel-index__content__box03">
+            <h4>Produto Mais Vendido</h4>
+            <img src="assets/img/item-04.jpg" alt="">
+            <ul>
               <li>
-                <a href="adicionar-usuario.html">Adicionar Usuario</a>
-              </li>
-              <li>
-                <a href="listar-usuarios.html">Listar Usuarios</a>
+                <p>Nome: Produto Teste</p>
+                <p>Valor: 99,99</p>
+                <p>Cliente: Casas Bahia</p>
               </li>
             </ul>
+          </div>
 
-            <ul class="panel-left__menu__line-category">
-              <h3><i class="fas fa-sitemap" style="color: #fff; margin-right: 5px;"></i> Categoria</h3>
-              <li>
-                <a href="adicionar-categoria.html">Adicionar Categoria</a>
-              </li>
-              <li>
-                <a href="listar-categorias.html">Listar Categorias</a>
-              </li>
-            </ul>
+          <div class="col-md-3 conteudo-painel-index__content__box04">
+            <h4>Funcionario Top Vendas</h4>
+          </div>
 
-          </section>
-  
-      </div> <!-- End Container-->
-  </aside>
-<!-- end Menu Lateral-->
+          <div class="col-md-3 conteudo-painel-index__content__box05">
+            <h4>Funcionario do Mês</h4>
+          </div>
 
-<!-- Scripts -->
+        </div>
+
+      </div>
+
+      </div>
+  </div>
+
+</main>
+
+
 <script src="assets/js/libs/jquery-3.4.1.min.js"></script>
 <script src="assets/js/libs/popper.min.js"></script>
 <!-- <script src="node_modules/bootstrap/js/dist/util.js"></script> -->

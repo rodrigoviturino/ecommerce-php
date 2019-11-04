@@ -44,100 +44,172 @@ $font-3: "Turret Road", cursive;
     @else if $size == 14 {
         font-size: em(14);
     }
-
-    @else if $size==15 {
+    @else if $size== 15 {
         font-size: em(15);
     }
-
-    @else if $size==16 {
+    @else if $size== 16 {
         font-size: em(16);
     }
-
-    @else if $size==17 {
+    @else if $size== 17 {
         font-size: em(17);
     }
-
-    @else if $size==18 {
+    @else if $size== 18 {
         font-size: em(18);
     }
-
-    @else if $size==24 {
+    @else if $size== 24 {
         font-size: em(24);
     }
-
-    @else if $size==20 {
+    @else if $size== 20 {
         font-size: em(20);
     }
-
-    @else if $size==25 {
+    @else if $size== 25 {
         font-size: em(25);
     }
-
-    @else if $size==30 {
+    @else if $size== 30 {
         font-size: em(30);
     }
-
-    @else if $size==35 {
+    @else if $size== 35 {
         font-size: em(35);
     }
-
-    @else if $size==40 {
+    @else if $size== 40 {
         font-size: em(40);
-        line-height: 45px;
     }
-
-    @else if $size==45 {
+    @else if $size== 45 {
         font-size: em(45);
     }
-
-    @else if $size==50 {
+    @else if $size== 50 {
         font-size: em(50);
     }
-
-    @else if $size==56 {
+    @else if $size== 56 {
         font-size: em(56);
     }
-
-    @else if $size==60 {
+    @else if $size== 60 {
         font-size: em(60);
-        line-height: 80px;
     }
 }
 
 @mixin type-2($size) {
     font-family: $font-2;
 
-    @if $size==12 {
+    @if $size==10 {
+        font-size: em(10);
+    }
+    @else if $size == 11 {
+        font-size: em(11);
+    }
+    @else if $size == 12 {
         font-size: em(12);
     }
-
-    @else if $size==14 {
+    @else if $size == 13 {
+        font-size: em(13);
+    }
+    @else if $size == 14 {
         font-size: em(14);
     }
-
-    @else if $size==16 {
+    @else if $size== 15 {
+        font-size: em(15);
+    }
+    @else if $size== 16 {
         font-size: em(16);
     }
-
-    @else if $size==18 {
+    @else if $size== 17 {
+        font-size: em(17);
+    }
+    @else if $size== 18 {
         font-size: em(18);
     }
-
-    @else if $size==24 {
+    @else if $size== 24 {
         font-size: em(24);
     }
-
-    @else if $size==34 {
-        font-size: em(34);
+    @else if $size== 20 {
+        font-size: em(20);
+    }
+    @else if $size== 25 {
+        font-size: em(25);
+    }
+    @else if $size== 30 {
+        font-size: em(30);
+    }
+    @else if $size== 35 {
+        font-size: em(35);
+    }
+    @else if $size== 40 {
+        font-size: em(40);
+    }
+    @else if $size== 45 {
+        font-size: em(45);
+    }
+    @else if $size== 50 {
+        font-size: em(50);
+    }
+    @else if $size== 56 {
+        font-size: em(56);
+    }
+    @else if $size== 60 {
+        font-size: em(60);
     }
 }
 
 
-@mixin type-2($size) {
+@mixin type-3($size) {
     font-family: $font-3;
 
-    @if $size==12 {
+    @if $size==10 {
+        font-size: em(10);
+    }
+    @else if $size == 11 {
+        font-size: em(11);
+    }
+    @else if $size == 12 {
         font-size: em(12);
+    }
+    @else if $size == 13 {
+        font-size: em(13);
+    }
+    @else if $size == 14 {
+        font-size: em(14);
+    }
+    @else if $size== 15 {
+        font-size: em(15);
+    }
+    @else if $size== 16 {
+        font-size: em(16);
+    }
+    @else if $size== 17 {
+        font-size: em(17);
+    }
+    @else if $size== 18 {
+        font-size: em(18);
+    }
+    @else if $size== 24 {
+        font-size: em(24);
+    }
+    @else if $size== 20 {
+        font-size: em(20);
+    }
+    @else if $size== 25 {
+        font-size: em(25);
+    }
+    @else if $size== 30 {
+        font-size: em(30);
+    }
+    @else if $size== 35 {
+        font-size: em(35);
+    }
+    @else if $size== 40 {
+        font-size: em(40);
+    }
+    @else if $size== 45 {
+        font-size: em(45);
+    }
+    @else if $size== 50 {
+        font-size: em(50);
+    }
+    @else if $size== 56 {
+        font-size: em(56);
+    }
+    @else if $size== 60 {
+        font-size: em(60);
     }
 }
 
